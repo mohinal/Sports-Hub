@@ -1,0 +1,510 @@
+<html lang="en">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1" name="viewport"/>
+  <title>
+   Sports Hub - Your Ultimate Sports Destination
+  </title>
+  <script src="https://cdn.tailwindcss.com">
+  </script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet"/>
+  <style>
+   body {
+      font-family: 'Roboto', sans-serif;
+    }
+  </style>
+ </head>
+ <body class="bg-gray-100 text-gray-900">
+  <!-- Header / Navbar -->
+  <header class="bg-white shadow sticky top-0 z-50">
+   <div class="container mx-auto flex items-center justify-between px-4 py-4">
+    <a class="text-3xl font-bold text-blue-600 flex items-center space-x-2" href="#">
+     <i class="fas fa-basketball-ball">
+     </i>
+     <span>
+      Sports Hub
+     </span>
+    </a>
+    <nav class="hidden md:flex space-x-8 font-semibold text-gray-700">
+     <a class="hover:text-blue-600 transition" href="#news">
+      News
+     </a>
+     <a class="hover:text-blue-600 transition" href="#scores">
+      Scores
+     </a>
+     <a class="hover:text-blue-600 transition" href="#teams">
+      Teams
+     </a>
+     <a class="hover:text-blue-600 transition" href="#schedule">
+      Schedule
+     </a>
+     <a class="hover:text-blue-600 transition" href="#videos">
+      Videos
+     </a>
+     <a class="hover:text-blue-600 transition" href="#contact">
+      Contact
+     </a>
+    </nav>
+    <button aria-label="Toggle menu" class="md:hidden text-gray-700 focus:outline-none focus:ring-2 focus:ring-blue-600" id="menu-btn">
+     <i class="fas fa-bars fa-lg">
+     </i>
+    </button>
+   </div>
+   <nav aria-label="Mobile menu" class="hidden md:hidden bg-white border-t border-gray-200" id="mobile-menu">
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-blue-50" href="#news">
+     News
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-blue-50" href="#scores">
+     Scores
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-blue-50" href="#teams">
+     Teams
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-blue-50" href="#schedule">
+     Schedule
+    </a>
+    <a class="block px-4 py-3 border-b border-gray-200 hover:bg-blue-50" href="#videos">
+     Videos
+    </a>
+    <a class="block px-4 py-3 hover:bg-blue-50" href="#contact">
+     Contact
+    </a>
+   </nav>
+  </header>
+  <!-- Hero Section -->
+  <section class="relative bg-blue-600 text-white">
+   <img alt="Dynamic collage of various sports action shots including basketball, soccer, and tennis players in motion" class="w-full h-60 md:h-96 object-cover opacity-70" height="600" src="https://storage.googleapis.com/a1aa/image/a109a72d-9799-4f37-84c6-51d3fea68f3f.jpg" width="1920"/>
+   <div class="absolute inset-0 flex flex-col justify-center items-center px-4 text-center">
+    <h1 class="text-4xl md:text-6xl font-extrabold drop-shadow-lg">
+     Welcome to Sports Hub
+    </h1>
+    <p class="mt-4 max-w-3xl text-lg md:text-2xl drop-shadow-md">
+     Your ultimate destination for the latest sports news, live scores, team updates, and exclusive videos.
+    </p>
+    <a class="mt-8 inline-block bg-white text-blue-600 font-bold px-6 py-3 rounded shadow hover:bg-gray-100 transition" href="#news">
+     Explore Latest News
+    </a>
+   </div>
+  </section>
+  <!-- Latest News Section -->
+  <section class="container mx-auto px-4 py-12" id="news">
+   <h2 class="text-3xl font-bold text-center mb-8 text-blue-700">
+    Latest Sports News
+   </h2>
+   <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <article class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+     <img alt="Basketball players jumping to score a basket in a championship final game with a packed stadium" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/d38876ca-30f0-45ad-df82-c5c0cf8977df.jpg" width="600"/>
+     <div class="p-4">
+      <h3 class="font-semibold text-xl mb-2">
+       Basketball Championship Final Thrills Fans
+      </h3>
+      <p class="text-gray-700 text-sm mb-4">
+       The championship final delivered an intense showdown with last-second buzzer beaters and record-breaking performances.
+      </p>
+      <a class="text-blue-600 font-semibold hover:underline" href="#">
+       Read More
+      </a>
+     </div>
+    </article>
+    <article class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+     <img alt="Soccer players competing fiercely during a World Cup qualifier match under stadium lights" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/adb498e0-bd1f-4d97-ccf6-3c5474c62cd2.jpg" width="600"/>
+     <div class="p-4">
+      <h3 class="font-semibold text-xl mb-2">
+       World Cup Qualifiers Heat Up
+      </h3>
+      <p class="text-gray-700 text-sm mb-4">
+       Teams battle fiercely for a spot in the upcoming World Cup, with surprising upsets and standout players emerging.
+      </p>
+      <a class="text-blue-600 font-semibold hover:underline" href="#">
+       Read More
+      </a>
+     </div>
+    </article>
+    <article class="bg-white rounded-lg shadow hover:shadow-lg transition overflow-hidden">
+     <img alt="Athletes sprinting on a track during an Olympic athletics event with cheering crowd" class="w-full h-48 object-cover" height="400" src="https://storage.googleapis.com/a1aa/image/b6a6aa76-1414-4cd1-1188-649663277785.jpg" width="600"/>
+     <div class="p-4">
+      <h3 class="font-semibold text-xl mb-2">
+       Olympic Athletics Records Shattered
+      </h3>
+      <p class="text-gray-700 text-sm mb-4">
+       New world records were set in sprinting and jumping events, showcasing the peak of athletic performance.
+      </p>
+      <a class="text-blue-600 font-semibold hover:underline" href="#">
+       Read More
+      </a>
+     </div>
+    </article>
+   </div>
+  </section>
+  <!-- Live Scores Section -->
+  <section class="bg-white py-12" id="scores">
+   <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-8 text-blue-700">
+     Live Scores
+    </h2>
+    <div class="overflow-x-auto">
+     <table class="min-w-full text-left border-collapse border border-gray-200">
+      <thead class="bg-blue-600 text-white">
+       <tr>
+        <th class="py-3 px-4 border border-blue-700">
+         Sport
+        </th>
+        <th class="py-3 px-4 border border-blue-700">
+         Match
+        </th>
+        <th class="py-3 px-4 border border-blue-700">
+         Score
+        </th>
+        <th class="py-3 px-4 border border-blue-700">
+         Status
+        </th>
+        <th class="py-3 px-4 border border-blue-700">
+         Time
+        </th>
+       </tr>
+      </thead>
+      <tbody>
+       <tr class="hover:bg-blue-50">
+        <td class="py-3 px-4 border border-gray-300 flex items-center space-x-2">
+         <img alt="Soccer ball icon" class="w-6 h-6" height="24" src="https://storage.googleapis.com/a1aa/image/28a3caf5-82d3-4a94-14a7-4a4ae6e6e1a6.jpg" width="24"/>
+         <span>
+          Soccer
+         </span>
+        </td>
+        <td class="py-3 px-4 border border-gray-300">
+         Manchester United vs Chelsea
+        </td>
+        <td class="py-3 px-4 border border-gray-300 font-bold">
+         2 - 1
+        </td>
+        <td class="py-3 px-4 border border-gray-300 text-green-600 font-semibold">
+         Live
+        </td>
+        <td class="py-3 px-4 border border-gray-300">
+         75'
+        </td>
+       </tr>
+       <tr class="hover:bg-blue-50 bg-gray-50">
+        <td class="py-3 px-4 border border-gray-300 flex items-center space-x-2">
+         <img alt="Basketball icon with orange ball" class="w-6 h-6" height="24" src="https://storage.googleapis.com/a1aa/image/bfe54821-fdc5-49b6-271e-92b1126d6a3a.jpg" width="24"/>
+         <span>
+          Basketball
+         </span>
+        </td>
+        <td class="py-3 px-4 border border-gray-300">
+         Lakers vs Celtics
+        </td>
+        <td class="py-3 px-4 border border-gray-300 font-bold">
+         98 - 102
+        </td>
+        <td class="py-3 px-4 border border-gray-300 text-red-600 font-semibold">
+         Finished
+        </td>
+        <td class="py-3 px-4 border border-gray-300">
+         Final
+        </td>
+       </tr>
+       <tr class="hover:bg-blue-50">
+        <td class="py-3 px-4 border border-gray-300 flex items-center space-x-2">
+         <img alt="Tennis racket and ball icon" class="w-6 h-6" height="24" src="https://storage.googleapis.com/a1aa/image/3d7c4cae-79f6-4e08-c6ef-a84b52f4f6d1.jpg" width="24"/>
+         <span>
+          Tennis
+         </span>
+        </td>
+        <td class="py-3 px-4 border border-gray-300">
+         Federer vs Nadal
+        </td>
+        <td class="py-3 px-4 border border-gray-300 font-bold">
+         3 - 2
+        </td>
+        <td class="py-3 px-4 border border-gray-300 text-yellow-600 font-semibold">
+         In Progress
+        </td>
+        <td class="py-3 px-4 border border-gray-300">
+         Set 5
+        </td>
+       </tr>
+       <tr class="hover:bg-blue-50 bg-gray-50">
+        <td class="py-3 px-4 border border-gray-300 flex items-center space-x-2">
+         <img alt="Ice hockey puck and stick icon" class="w-6 h-6" height="24" src="https://storage.googleapis.com/a1aa/image/99650921-2817-411f-c079-ac57f9d1ec9c.jpg" width="24"/>
+         <span>
+          Hockey
+         </span>
+        </td>
+        <td class="py-3 px-4 border border-gray-300">
+         Toronto Maple Leafs vs Montreal Canadiens
+        </td>
+        <td class="py-3 px-4 border border-gray-300 font-bold">
+         1 - 1
+        </td>
+        <td class="py-3 px-4 border border-gray-300 text-green-600 font-semibold">
+         Live
+        </td>
+        <td class="py-3 px-4 border border-gray-300">
+         2nd Period
+        </td>
+       </tr>
+       <tr class="hover:bg-blue-50">
+        <td class="py-3 px-4 border border-gray-300 flex items-center space-x-2">
+         <img alt="Baseball and bat icon" class="w-6 h-6" height="24" src="https://storage.googleapis.com/a1aa/image/11ebecff-8e94-42c5-901b-024bbd9ed80e.jpg" width="24"/>
+         <span>
+          Baseball
+         </span>
+        </td>
+        <td class="py-3 px-4 border border-gray-300">
+         Yankees vs Red Sox
+        </td>
+        <td class="py-3 px-4 border border-gray-300 font-bold">
+         5 - 3
+        </td>
+        <td class="py-3 px-4 border border-gray-300 text-red-600 font-semibold">
+         Finished
+        </td>
+        <td class="py-3 px-4 border border-gray-300">
+         Final
+        </td>
+       </tr>
+      </tbody>
+     </table>
+    </div>
+   </div>
+  </section>
+  <!-- Teams Section -->
+  <section class="container mx-auto px-4 py-12" id="teams">
+   <h2 class="text-3xl font-bold text-center mb-8 text-blue-700">
+    Top Teams
+   </h2>
+   <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
+    <div class="bg-white rounded-lg shadow p-6 flex flex-col items-center text-center hover:shadow-lg transition">
+     <img alt="Logo of the New York Knicks basketball team, blue and orange colors" class="mb-4 rounded-full border-4 border-blue-600" height="120" src="https://storage.googleapis.com/a1aa/image/9e86d7be-2d77-4ec5-7709-3af8af02c248.jpg" width="120"/>
+     <h3 class="font-semibold text-xl mb-2">
+      New York Knicks
+     </h3>
+     <p class="text-gray-600 mb-4">
+      NBA Basketball Team
+     </p>
+     <a class="text-blue-600 font-semibold hover:underline" href="#">
+      View Profile
+     </a>
+    </div>
+    <div class="bg-white rounded-lg shadow p-6 flex flex-col items-center text-center hover:shadow-lg transition">
+     <img alt="Logo of the Manchester United soccer team, red and white colors" class="mb-4 rounded-full border-4 border-red-600" height="120" src="https://storage.googleapis.com/a1aa/image/470b9978-04a7-4595-0983-78486286771a.jpg" width="120"/>
+     <h3 class="font-semibold text-xl mb-2">
+      Manchester United
+     </h3>
+     <p class="text-gray-600 mb-4">
+      English Premier League Soccer Team
+     </p>
+     <a class="text-red-600 font-semibold hover:underline" href="#">
+      View Profile
+     </a>
+    </div>
+    <div class="bg-white rounded-lg shadow p-6 flex flex-col items-center text-center hover:shadow-lg transition">
+     <img alt="Logo of the Boston Celtics basketball team, green and white colors" class="mb-4 rounded-full border-4 border-green-600" height="120" src="https://storage.googleapis.com/a1aa/image/4875308d-da31-48de-678e-fcf6a526ab98.jpg" width="120"/>
+     <h3 class="font-semibold text-xl mb-2">
+      Boston Celtics
+     </h3>
+     <p class="text-gray-600 mb-4">
+      NBA Basketball Team
+     </p>
+     <a class="text-green-600 font-semibold hover:underline" href="#">
+      View Profile
+     </a>
+    </div>
+    <div class="bg-white rounded-lg shadow p-6 flex flex-col items-center text-center hover:shadow-lg transition">
+     <img alt="Logo of the San Francisco Giants baseball team, orange and black colors" class="mb-4 rounded-full border-4 border-orange-600" height="120" src="https://storage.googleapis.com/a1aa/image/4a9f7d4e-0cae-40c3-d76a-6ed5d6bbd5a1.jpg" width="120"/>
+     <h3 class="font-semibold text-xl mb-2">
+      San Francisco Giants
+     </h3>
+     <p class="text-gray-600 mb-4">
+      MLB Baseball Team
+     </p>
+     <a class="text-orange-600 font-semibold hover:underline" href="#">
+      View Profile
+     </a>
+    </div>
+   </div>
+  </section>
+  <!-- Schedule Section -->
+  <section class="bg-white py-12" id="schedule">
+   <div class="container mx-auto px-4">
+    <h2 class="text-3xl font-bold text-center mb-8 text-blue-700">
+     Upcoming Matches &amp; Events
+    </h2>
+    <div class="space-y-6 max-w-4xl mx-auto">
+     <div class="flex flex-col md:flex-row md:justify-between md:items-center bg-blue-50 rounded-lg p-4 shadow hover:shadow-md transition">
+      <div>
+       <h3 class="text-xl font-semibold text-blue-800">
+        NBA Playoffs: Lakers vs Warriors
+       </h3>
+       <p class="text-gray-700">
+        Location: Staples Center, Los Angeles
+       </p>
+      </div>
+      <div class="mt-2 md:mt-0 text-gray-600 font-semibold">
+       Date: May 15, 2024 - 7:00 PM
+      </div>
+     </div>
+     <div class="flex flex-col md:flex-row md:justify-between md:items-center bg-blue-50 rounded-lg p-4 shadow hover:shadow-md transition">
+      <div>
+       <h3 class="text-xl font-semibold text-blue-800">
+        UEFA Champions League Final
+       </h3>
+       <p class="text-gray-700">
+        Location: Wembley Stadium, London
+       </p>
+      </div>
+      <div class="mt-2 md:mt-0 text-gray-600 font-semibold">
+       Date: May 28, 2024 - 8:00 PM
+      </div>
+     </div>
+     <div class="flex flex-col md:flex-row md:justify-between md:items-center bg-blue-50 rounded-lg p-4 shadow hover:shadow-md transition">
+      <div>
+       <h3 class="text-xl font-semibold text-blue-800">
+        Wimbledon Tennis Championships
+       </h3>
+       <p class="text-gray-700">
+        Location: All England Club, London
+       </p>
+      </div>
+      <div class="mt-2 md:mt-0 text-gray-600 font-semibold">
+       Date: July 1-14, 2024
+      </div>
+     </div>
+     <div class="flex flex-col md:flex-row md:justify-between md:items-center bg-blue-50 rounded-lg p-4 shadow hover:shadow-md transition">
+      <div>
+       <h3 class="text-xl font-semibold text-blue-800">
+        MLB All-Star Game
+       </h3>
+       <p class="text-gray-700">
+        Location: Yankee Stadium, New York
+       </p>
+      </div>
+      <div class="mt-2 md:mt-0 text-gray-600 font-semibold">
+       Date: July 16, 2024 - 7:30 PM
+      </div>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Videos Section -->
+  <section class="container mx-auto px-4 py-12" id="videos">
+   <h2 class="text-3xl font-bold text-center mb-8 text-blue-700">
+    Featured Videos
+   </h2>
+   <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+    <div class="bg-white rounded-lg shadow overflow-hidden hover:shadow-lg transition">
+     <img alt="Thumbnail of a basketball player dunking during a highlight reel" class="w-full object-cover" height="340" src="https://storage.googleapis.com/a1aa/image/55ac5015-7940-4b97-d404-9002ae422c22.jpg" width="600"/>
+     <div class="p-4">
+      <h3 class="font-semibold text-lg mb-2">
+       Top 10 Dunks of the Season
+      </h3>
+      <button aria-label="Play video Top 10 Dunks of the Season" class="inline-flex items-center space-x-2 text-blue-600 font-semibold hover:underline focus:outline-none">
+       <i class="fas fa-play-circle fa-lg">
+       </i>
+       <span>
+        Watch Now
+       </span>
+      </button>
+     </div>
+    </div>
+    <div class="bg-white rounded-lg shadow overflow-hidden hover:shadow-lg transition">
+     <img alt="Thumbnail showing a soccer player scoring a goal with goalkeeper diving" class="w-full object-cover" height="340" src="https://storage.googleapis.com/a1aa/image/87966390-28f3-49ea-15e6-e63cda0875b3.jpg" width="600"/>
+     <div class="p-4">
+      <h3 class="font-semibold text-lg mb-2">
+       Best Goals from the World Cup Qualifiers
+      </h3>
+      <button aria-label="Play video Best Goals from the World Cup Qualifiers" class="inline-flex items-center space-x-2 text-blue-600 font-semibold hover:underline focus:outline-none">
+       <i class="fas fa-play-circle fa-lg">
+       </i>
+       <span>
+        Watch Now
+       </span>
+      </button>
+     </div>
+    </div>
+    <div class="bg-white rounded-lg shadow overflow-hidden hover:shadow-lg transition">
+     <img alt="Thumbnail showing Olympic athletes celebrating on the podium with medals" class="w-full object-cover" height="340" src="https://storage.googleapis.com/a1aa/image/57fadf2f-fa27-4f11-5614-dffdae8b07eb.jpg" width="600"/>
+     <div class="p-4">
+      <h3 class="font-semibold text-lg mb-2">
+       Olympic Highlights 2024
+      </h3>
+      <button aria-label="Play video Olympic Highlights 2024" class="inline-flex items-center space-x-2 text-blue-600 font-semibold hover:underline focus:outline-none">
+       <i class="fas fa-play-circle fa-lg">
+       </i>
+       <span>
+        Watch Now
+       </span>
+      </button>
+     </div>
+    </div>
+   </div>
+  </section>
+  <!-- Contact Section -->
+  <section class="bg-blue-600 text-white py-12" id="contact">
+   <div class="container mx-auto px-4 max-w-3xl">
+    <h2 class="text-3xl font-bold mb-6 text-center">
+     Contact Us
+    </h2>
+    <form action="contact.php" aria-label="Contact form" class="bg-blue-500 rounded-lg p-8 shadow-lg" method="POST">
+     <div class="mb-6">
+      <label class="block mb-2 font-semibold" for="name">
+       Name
+      </label>
+      <input class="w-full px-4 py-2 rounded text-gray-900 focus:outline-none focus:ring-2 focus:ring-white" id="name" name="name" placeholder="Your full name" required="" type="text"/>
+     </div>
+     <div class="mb-6">
+      <label class="block mb-2 font-semibold" for="email">
+       Email
+      </label>
+      <input class="w-full px-4 py-2 rounded text-gray-900 focus:outline-none focus:ring-2 focus:ring-white" id="email" name="email" placeholder="you@example.com" required="" type="email"/>
+     </div>
+     <div class="mb-6">
+      <label class="block mb-2 font-semibold" for="message">
+       Message
+      </label>
+      <textarea class="w-full px-4 py-2 rounded text-gray-900 focus:outline-none focus:ring-2 focus:ring-white" id="message" name="message" placeholder="Write your message here..." required="" rows="5"></textarea>
+     </div>
+     <button class="w-full bg-white text-blue-600 font-bold py-3 rounded hover:bg-gray-100 transition" type="submit">
+      Send Message
+     </button>
+    </form>
+   </div>
+  </section>
+  <!-- Footer -->
+  <footer class="bg-gray-900 text-gray-400 py-8">
+   <div class="container mx-auto px-4 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+    <p>
+     © 2024 Sports Hub. All rights reserved.
+    </p>
+    <div class="flex space-x-6 text-xl">
+     <a aria-label="Facebook" class="hover:text-blue-600" href="#">
+      <i class="fab fa-facebook-f">
+      </i>
+     </a>
+     <a aria-label="Twitter" class="hover:text-blue-400" href="#">
+      <i class="fab fa-twitter">
+      </i>
+     </a>
+     <a aria-label="Instagram" class="hover:text-pink-500" href="#">
+      <i class="fab fa-instagram">
+      </i>
+     </a>
+     <a aria-label="YouTube" class="hover:text-red-600" href="#">
+      <i class="fab fa-youtube">
+      </i>
+     </a>
+    </div>
+   </div>
+  </footer>
+  <script>
+   const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+ </body>
+</html>
